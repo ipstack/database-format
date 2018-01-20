@@ -13,6 +13,9 @@ Content for file is a binary string.
 |1|Relations count ($RLC)|
 |1|Size of relations definition unpack format ($RLF)|
 |2|Size of relation definition row ($LRD)|
+|4|Size of words register($WRL)|
+|2|Size of word fields list($WFL)|
+|$WFL|Word fields list|
 |$RLF|Relation unpack format|
 |$RGF|Registers metadata unpack format|
 |$RLC*$LRD|Relations|
@@ -24,6 +27,7 @@ Content for file is a binary string.
 |?|Database of Register 2|
 |...|...|
 |?|Database of Register $RGC|
+|$WRL|Words register|
 |4|Unixtime of database actuality time|
 |128|Author|
 |?|Database license|
